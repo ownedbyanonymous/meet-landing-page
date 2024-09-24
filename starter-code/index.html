@@ -1,31 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Meet landing page</title>
-</head>
-<body>
-  Meet makes it easy to connect with others face-to-face virtually and collaborate across any device.
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
 
-  Download v1.3
-  What is it?
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
 
-  01
-  Built for modern use
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="./styles/main.css" />
 
-  Smarter meetings, all in one place
+    <title>Frontend Mentor | Meet landing page</title>
+  </head>
+  <body class="flex-container">
+    <header>
+      <img src="./assets/logo.svg" alt="Meet Logo" />
+    </header>
 
-  Send messages, share files, show your screen, and record your meetings — all in one 
-  workspace. Control who can join with invite-only team access, data encryption, and data export.
+    <section class="hero flex-container">
+      <img
+        src="./assets/desktop/faces-left.svg"
+        alt="Meet Landing Page"
+        class="image-left"
+      />
+      <div class="hero-content flex-container">
+        <h1 class="text-preset-2">Group Chat for Everyone</h1>
+        <p class="text-preset-5">
+          Meet makes it easy to connect with others face-to-face virtually and
+          collaborate across any device.
+        </p>
+        <div class="cta-buttons flex-container">
+          <a href="#" class="button blue">Download v1.3</a>
+          <a href="#" class="button purple">What is it?</a>
+        </div>
+      </div>
+      <img
+        src="./assets/desktop/faces-right.svg"
+        alt="Meet Landing Page"
+        class="image-right"
+      />
+    </section>
 
-  02
-  Experience more together
-  Stay connected with reliable HD meetings and unlimited one-on-one and group video sessions.
-
-  Download v1.3
-</body>
+    <main class="flex-container">
+      <img src="./assets/mobile/number1.svg" alt="" />
+      <section class="image-collage">
+        <img src="./assets/desktop/image-woman-in-videocall.jpg" alt="" />
+        <img src="./assets/desktop/image-women-videochatting.jpg" alt="" />
+        <img src="./assets/desktop/image-men-in-meeting.jpg" alt="" />
+        <img src="./assets/desktop/image-man-texting.jpg" alt="" />
+      </section>
+      <div class="main-content">
+        <h3 class="text-preset-6">Built for modern use</h3>
+        <h2 class="text-preset-7">Smarter meetings, all in one place</h2>
+        <p class="text-preset-5">
+          Send messages, share files, show your screen, and record your meetings
+          — all in one workspace. Control who can join with invite-only team
+          access, data encryption, and data export.
+        </p>
+      </div>
+    </main>
+    <footer class="overlay">
+      <img src="./assets/mobile/number2.svg" alt="" />
+      <div class="footer-content flex-container">
+        <h2 class="text-preset-7">Experience more together</h2>
+        <p class="text-preset-5">
+          Stay connected with reliable HD meetings and unlimited one-on-one and
+          group video sessions.
+        </p>
+        <a href="#" class="button purple">Download v1.3</a>
+      </div>
+    </footer>
+  </body>
 </html>
